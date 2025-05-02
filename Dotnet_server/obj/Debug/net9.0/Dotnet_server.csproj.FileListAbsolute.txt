@@ -1,0 +1,7 @@
+C:\Desktop\Project 2025\.NET-React-SignalR-Realtime\Dotnet_server\obj\Debug\net9.0\Dotnet_server.csproj.AssemblyReference.cache
+C:\Desktop\Project 2025\.NET-React-SignalR-Realtime\Dotnet_server\obj\Debug\net9.0\Dotnet_server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desktop\Project 2025\.NET-React-SignalR-Realtime\Dotnet_server\obj\Debug\net9.0\Dotnet_server.AssemblyInfoInputs.cache
+C:\Desktop\Project 2025\.NET-React-SignalR-Realtime\Dotnet_server\obj\Debug\net9.0\Dotnet_server.AssemblyInfo.cs
+C:\Desktop\Project 2025\.NET-React-SignalR-Realtime\Dotnet_server\obj\Debug\net9.0\Dotnet_server.csproj.CoreCompileInputs.cache
+C:\Desktop\Project 2025\.NET-React-SignalR-Realtime\Dotnet_server\obj\Debug\net9.0\Dotnet_server.MvcApplicationPartsAssemblyInfo.cs
+C:\Desktop\Project 2025\.NET-React-SignalR-Realtime\Dotnet_server\obj\Debug\net9.0\Dotnet_server.MvcApplicationPartsAssemblyInfo.cache
