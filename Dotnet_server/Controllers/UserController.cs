@@ -1,3 +1,4 @@
+using AutoMapper;
 using Dotnet_server.Data;
 using Dotnet_server.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -8,19 +9,32 @@ namespace Dotnet_server.Controllers;
 
 public class UserController : ControllerBase
 {
-    public UserController()
+    IUserRepository _userRepository;
+    IMapper _mapper;
+    public UserController(IUserRepository userRepository)
     {
-
+        _userRepository = userRepository;
+        _mapper = new Mapper(new MapperConfiguration(cfg =>
+        {
+            cfg.CreateMap<UserDto, User>();
+        }));
     }
     [HttpGet("GetUser")]
     public IActionResult GetUser()
     {
         var user = new UserDto() { FirstName = "Taye", LastName = "Dotnet", Email = "dotnet@gmail.com", Active = true };
-        return Ok(user);
+        IEnumerable <User> users = _userRepository.GetUsers();
+        return Ok(users);
     }
     [HttpPost("AddUser")]
     public IActionResult AddUser(UserDto user)
     {
-        return Ok(user);
+        User userDb = _mapper.Map<User>(user);
+        _userRepository.AddEntity(userDb);
+        if (_userRepository.SaveChanges())
+        {
+            return Ok(user);
+        }
+        throw new Exception("Failed to add user");
     }
 }
