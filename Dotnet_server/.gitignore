@@ -1,3 +1,10 @@
 /build
 .env
 .vscode
+
+# Ignore .NET build output folders
+**/bin/
+**/obj/
+
+bin/
+obj/

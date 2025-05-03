@@ -3,9 +3,17 @@ namespace Dotnet_server.Models;
 public partial class User
 {
     public int UserId { get; set; }
-    public string FirstName { get; set; } = string.Empty;
+    public string FirstName { get; set; } 
     public string LastName { get; set; } = "";
-    public string Email { get; set; }
+    public string Email { get; set; } = string.Empty;
     public bool Active { get; set; }
+
+    public User()
+    {
+        if (FirstName is null)
+        {
+            FirstName = "";
+        }
+    }
     
 }
