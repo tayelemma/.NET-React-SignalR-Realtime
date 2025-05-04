@@ -2,7 +2,7 @@ namespace Dotnet_server.Models;
 
 public partial class User
 {
-    public int UserId { get; set; }
+    public int userId { get; set; }
     public string FirstName { get; set; } 
     public string LastName { get; set; } = "";
     public string Email { get; set; } = string.Empty;
