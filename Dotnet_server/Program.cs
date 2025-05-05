@@ -1,5 +1,5 @@
 using Dotnet_server.Data;
-using Microsoft.EntityFrameworkCore;
+using Dotnet_server.SignalHub;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +8,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddSignalR();
 builder.Services.AddCors((options) =>
 {
     options.AddPolicy("DevCors", (corsBuilder) =>
@@ -29,6 +30,7 @@ builder.Services.AddCors((options) =>
 });
 
 var app = builder.Build();
+app.MapHub<NotificationHub>("/message");
 
 if (app.Environment.IsDevelopment())
 {
