@@ -1,11 +1,11 @@
 import { createContext } from "react";
 
 export interface ISignalR {
-    message: string;
-    desc: string;
+    connection: any;
+    message: Array<string>;
 }
 const defaultValue: ISignalR = {
-    message: "",
-    desc:""
+    connection: null,
+    message:[]
 }
 export const SignalRContext = createContext(defaultValue);
