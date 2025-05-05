@@ -183,3 +183,5 @@ C:\Desktop\Project 2025\.NET-React-SignalR-Realtime\Dotnet_server\bin\Debug\net9
 C:\Desktop\Project 2025\.NET-React-SignalR-Realtime\Dotnet_server\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Desktop\Project 2025\.NET-React-SignalR-Realtime\Dotnet_server\obj\Debug\net9.0\Dotnet_server.sourcelink.json
 C:\Desktop\Project 2025\.NET-React-SignalR-Realtime\Dotnet_server\bin\Debug\net9.0\AutoMapper.dll
+C:\Desktop\Project 2025\.NET-React-SignalR-Realtime\Dotnet_server\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Desktop\Project 2025\.NET-React-SignalR-Realtime\Dotnet_server\bin\Debug\net9.0\System.Net.WebSockets.WebSocketProtocol.dll
